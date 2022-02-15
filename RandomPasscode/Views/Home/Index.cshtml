@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Random Passcode</title>
+</head>
+
+<body>
+    <p>Random Passcode ( passcode #: @ViewBag.Count )</p>
+    <div class='passcode'>
+        <p>@ViewBag.String</p>
+    </div>
+    <form action="/redirect" method="post">
+        <input type="submit" value="Generate">
+    </form>
+</body>
+
+</html>
